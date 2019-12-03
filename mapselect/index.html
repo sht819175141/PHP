@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div id="box">
+		<select name="sheng" id="sheng">
+			<option value="">==请选择省/市==</option>
+		</select>
+		<select name="shi" id="shi">
+			<option value="">==请选择市/区==</option>
+		</select>
+		<input type="button" value="点击查询" name="btn" id="btn"/>
+	</div>
+	<script src="js/jquery-2.1.1.js"></script>
+	<script>
+		$.ajax({
+			type:'get',
+			url:'city.json',
+			datatype:'json',
+			success:function(data){
+				alert("ok")
+			}),
+			error:function(){
+				alert("连接失败")
+			}
+		}
+	</script>
+</body>
+</html>

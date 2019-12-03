@@ -1,0 +1,94 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#box{
+	height: 200px;
+	width: 300px;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	position: relative;
+}
+#list{
+	min-height: 162px;
+}
+#list li{
+	border-bottom: 1px dashed #ccc;
+	line-height: 50px;
+}
+
+#left{position: absolute;left:0px;bottom:8px;width: 30px;height: 30px;border: 1px solid blue;text-align: center;line-height: 30px;}
+#right{position: absolute;right:0px;bottom:8px;width: 30px;height: 30px;border: 1px solid blue;text-align: center;line-height: 30px;}
+
+#radio{
+	width: 200px;
+	height:50px;
+	overflow: hidden;
+	position:relative;
+	left: 50px;
+}
+#btn{
+	height: 30px;
+	width: 810px;
+	position: absolute;
+}
+#btn a{
+	margin-right: 10px;
+	border: 1px solid #ccc;
+	float: left;
+	height: 28px;
+	width: 30px;
+	line-height: 28px;
+	text-align: center;
+	text-decoration: none;
+}
+.bg{
+	background: blue;
+	color: red;
+	font-weight: bold;
+}
+
+
+
+
+  

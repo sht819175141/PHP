@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<form action="index.php" method="post">
+		<label for="user">姓名：</label><input type="text" value="" name="user" id="user"/>
+		<br/>
+		<label for="sex">性别：</label><input type="radio" name="sex" value="woman"/>女<input type="radio" value="man" name="sex"/>男
+		<br/>
+		<label for="age">年龄：</label>
+		<select name="age" id="">
+			<option value="0">16周岁以下</option>
+			<option value="1">16~~~50</option>
+			<option value="2">50~~~60</option>
+			<option value="3">60以上</option>	
+		</select>
+		<br />
+		<label for="">请选择要参加的我项目：</label>
+		<input type="checkbox" value="排球" name="god[]" checked="checked"/>排球
+		<input type="checkbox" value="网球" name="god[]" checked="checked"/>网球
+		<input type="checkbox" value="足球" name="god[]" checked="checked"/>足球
+		<input type="checkbox" value="蓝球" name="god[]" checked="checked"/>篮球
+		<input type="checkbox" value="羽毛球" name="god[]" checked="checked"/>羽毛球
+		<br />
+		<input type="submit" value="提交" name="btn"/>
+	</form>
+</body>
+</html>

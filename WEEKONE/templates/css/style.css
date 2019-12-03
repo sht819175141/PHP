@@ -1,0 +1,18 @@
+*{
+	margin:0;
+	padding:0;
+}
+table{
+	width:400px;
+	height:auto;	
+	border-collapse: collapse;
+	margin:20px auto;
+}
+table tr{
+	height: 40px;
+	line-height: 40px;
+}
+table tr td{
+	border:1px solid;
+	width:200px;
+}

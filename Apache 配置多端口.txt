@@ -1,0 +1,54 @@
+Apache 配置多端口 多虚拟主机 局域网访问示例
+
+一、在\wamp\bin\apache\Apache2.4.4\conf\extra\httpd-vhosts.conf 修改如下 
+复制代码 代码如下:
+
+NameVirtualHost *:80 
+
+<VirtualHost *:80> 
+DocumentRoot "E:/website/pxsj" 
+ServerName host7.com 
+ServerAlias 192.168.1.116 
+<Directory "E:/website/pxsj"> 
+Options Indexes FollowSymLinks 
+AllowOverride None 
+Order allow,deny 
+Allow from all 
+</Directory> 
+</VirtualHost> 
+
+NameVirtualHost *:8080 
+
+<VirtualHost *:8080> 
+DocumentRoot "E:/website/whsj" //根据文件夹改动
+ServerName host10.com:8080 
+ServerAlias 192.168.1.116:8080 
+<Directory "E:/website/whsj"> 
+Options Indexes FollowSymLinks 
+AllowOverride None 
+Order allow,deny 
+Allow from all 
+</Directory> 
+</VirtualHost> 
+
+二、\wamp\bin\apache\Apache2.4.4\conf\httpd.conf 修改如下： 
+
+在该文件中查找“Listen”一词修改 
+复制代码 代码如下:
+
+Listen 80 
+Listen 8080 
+
+# Virtual hosts  //这个不删 
+# Include conf/extra/httpd-vhosts.conf去掉前面的#，这样就开启了httpd-vhosts虚拟主机文件。这时候重启环境 
+
+三、C:\Windows\System32\drivers\etc\hosts 修改配置 
+复制代码 代码如下:
+
+<pre code_snippet_id="331423" snippet_file_name="blog_20140507_1_9705788"></pre> 
+<pre></pre> 
+<pre></pre> 
+<pre></pre> 
+
+
+
